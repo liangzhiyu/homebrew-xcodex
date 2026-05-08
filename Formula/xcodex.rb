@@ -1,8 +1,8 @@
 class Xcodex < Formula
   desc "Codex CLI data management tool"
   homepage "https://github.com/liangzhiyu/xcodex"
-  url "https://github.com/liangzhiyu/xcodex/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "f282053063b57b00ce798bd2a0edae945e02f1f0fb1d47fc5e7442b72ca996bf"
+  url "https://github.com/liangzhiyu/xcodex/archive/refs/tags/v0.1.5.tar.gz"
+  sha256 "ac2e986ae6135da3b3652c70db38e90a7e40682fac966aa5e6a5048f27d31722"
   license "MIT"
   head "https://github.com/liangzhiyu/xcodex.git", branch: "main"
 
