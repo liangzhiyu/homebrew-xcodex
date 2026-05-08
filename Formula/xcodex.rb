@@ -9,10 +9,11 @@ class Xcodex < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/xcodex"
+    system "go", "build", *std_go_args(ldflags: "-s -w -X main.version=v#{version}"), "./cmd/xcodex"
   end
 
   test do
     assert_match "Codex 数据管理工具", shell_output("#{bin}/xcodex help 2>&1")
+    assert_match "xcodex v", shell_output("#{bin}/xcodex version")
   end
 end
